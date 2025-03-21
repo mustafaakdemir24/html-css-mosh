@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style-type: none;
+      }
+      table,
+      td,
+      th {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+
+      tfoot {
+        text-align: left;
+      }
+
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Unordered List -->
+    <ul>
+      <li>Home</li>
+      <li>
+        Courses
+        <ul>
+          <li>HTML</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+        </ul>
+      </li>
+      <li>About me</li>
+      <li>Contact me</li>
+    </ul>
+
+    <!-- Ordered Lists -->
+    <ol>
+      <li>Preheat the oven.</li>
+      <li>Place the ingredients on the crust.</li>
+      <li>Put the pizza in the oven for 20 minutes.</li>
+    </ol>
+
+    <!-- Description List -->
+    <dl>
+      <dt>Title</dt>
+      <dd>The Ultimate HTML and CSS Course</dd>
+      <dt>Author</dt>
+      <dd>Mosh Hamedani</dd>
+      <dt>Skills</dt>
+      <dd>HTML</dd>
+      <dd>CSS</dd>
+      <dd>Responsive Design</dd>
+      <dd>Search Engine Optimization</dd>
+    </dl>
+
+    <!-- Tables -->
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Expenses</th>
+        </tr>
+        <tr>
+          <th>Category</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Marketing</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Accounting</td>
+          <td>$200</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>$300</th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Containers -->
+    <p>
+      <span class="highlight">Lorem</span>, ipsum dolor sit amet consectetur
+      adipisicing elit. Veniam, quam!
+    </p>
+
+    <!-- Semantic Elements -->
+    <article class="article">
+      <h1>Heading</h1>
+      <p>
+        Published
+        <time datetime="2021-01-01 17:00">January 1 2021 05:00pm</time>
+      </p>
+      <p>
+        <mark>Lorem</mark> ipsum dolor sit amet consectetur adipisicing elit.
+        Adipisci assumenda quibusdam quae architecto fuga placeat ratione iusto
+        provident libero tempore?
+      </p>
+      <figure>
+        <img src="" alt="" />
+        <figcaption>My coffee this morning</figcaption>
+      </figure>
+    </article>
+  </body>
+</html>
