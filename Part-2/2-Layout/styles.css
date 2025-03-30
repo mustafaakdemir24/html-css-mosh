@@ -1,16 +1,26 @@
-html {
-  /* 62.5$ of 16px = 10px */
-  font-size: 62.5%;
-}
-
 body {
-  /* margin: 10px; */
+  margin: 10px;
 }
 
-.box {
-  /* 10 x font size of the root element */
-  width: 15rem;
-  height: 100vh;
+.tweet {
+  border: 3px solid lightgrey;
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
   background-color: gold;
-  border-top: 3px solid orange;
+  float: left;
+  margin-right: 0.5rem;
+}
+
+.clear {
+  clear: both;
 }
