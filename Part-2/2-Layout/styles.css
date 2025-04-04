@@ -2,25 +2,26 @@ body {
   margin: 10px;
 }
 
-.tweet {
+.container {
   border: 3px solid lightgrey;
-  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.avatar {
+.box {
+  flex-basis: 15rem; /* overwrites width property*/
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex: 1 1 15rem; /* grow shrınk basis */
   width: 5rem;
   height: 5rem;
-  background-color: gold;
-  float: left;
-  margin-right: 0.5rem;
+  background: gold;
+  margin: 1rem;
 }
 
-.clear {
-  clear: both;
+.box-one {
 }
+/* 09:45 */
