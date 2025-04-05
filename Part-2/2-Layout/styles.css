@@ -3,25 +3,26 @@ body {
 }
 
 .container {
+  display: grid;
+  /* 3 x 2 */
+  grid-template: 100px auto 100px / 30fr 70fr;
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    ".       footer";
+  gap: 10px;
   border: 3px solid lightgrey;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .box {
-  flex-basis: 15rem; /* overwrites width property*/
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex: 1 1 15rem; /* grow shrınk basis */
-  width: 5rem;
-  height: 5rem;
-  background: gold;
-  margin: 1rem;
+  background-color: gold;
 }
 
 .box-one {
+  grid-area: header;
 }
-/* 09:45 */
+
+.box-four {
+  grid-area: footer;
+}
