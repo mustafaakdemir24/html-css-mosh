@@ -3,26 +3,41 @@ body {
 }
 
 .container {
-  display: grid;
-  /* 3 x 2 */
-  grid-template: 100px auto 100px / 30fr 70fr;
-  grid-template-areas:
-    "header  header"
-    "sidebar main"
-    ".       footer";
-  gap: 10px;
-  border: 3px solid lightgrey;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .box {
-  background-color: gold;
+  background: gold;
+  padding: 1rem;
 }
 
-.box-one {
-  grid-area: header;
+.box:nth-of-type(2) {
+  background: dodgerblue;
 }
 
-.box-four {
-  grid-area: footer;
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .box {
+    flex-direction: row;
+  }
+
+  .box {
+    background: white;
+  }
+}
+
+@media print {
+  body {
+    font-size: 12pt;
+  }
+
+  .box {
+    padding: 0.5cm;
+  }
 }
